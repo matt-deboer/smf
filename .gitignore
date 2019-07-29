@@ -76,3 +76,6 @@ src/test/*_unit_test
 # docs
 Doxyfile
 vendor/
+
+# history plugin
+.history

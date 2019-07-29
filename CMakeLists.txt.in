@@ -89,8 +89,10 @@ set (dpdk_args
   T=${dpdk_quadruple})
 
 ExternalProject_Add(dpdk
-  URL https://github.com/scylladb/dpdk/archive/a1774652fbbb1fe7c0ff392d5e66de60a0154df6.tar.gz
-  URL_MD5 2af337f9ed29955362845808d6cdaa3e
+  #URL https://github.com/scylladb/dpdk/archive/a1774652fbbb1fe7c0ff392d5e66de60a0154df6.tar.gz
+  URL https://github.com/scylladb/dpdk/archive/cc7e6ed22c0fc08e3ff37b3e68a61979d8214547.tar.gz
+  #URL_MD5 2af337f9ed29955362845808d6cdaa3e
+  URL_MD5 7aa07a7138e8d1b774cc5db2bd930d0d
   INSTALL_DIR    @SMF_DEPS_INSTALL_DIR@
   CONFIGURE_COMMAND
     COMMAND
@@ -275,8 +277,10 @@ ExternalProject_Add(lksctp-tools
   INSTALL_COMMAND ${make_command} install)
 
 ExternalProject_Add(seastar
-  URL https://github.com/vectorizedio/seastar/archive/a99a8eae0757790a3caac151beed137b2e9a4ba4.tar.gz
-  URL_MD5 888abc894e479a7fc40d42650674fe0e
+  #URL https://github.com/vectorizedio/seastar/archive/a99a8eae0757790a3caac151beed137b2e9a4ba4.tar.gz
+  URL https://github.com/scylladb/seastar/archive/seastar-19.06.0.tar.gz
+  #URL_MD5 888abc894e479a7fc40d42650674fe0e
+  URL_MD5 d34672a85d351567c34ca87db2847369
   INSTALL_DIR    @SMF_DEPS_INSTALL_DIR@
   CMAKE_ARGS
     -DCMAKE_BUILD_TYPE=@CMAKE_BUILD_TYPE@
