@@ -282,9 +282,9 @@ ExternalProject_Add(lksctp-tools
 
 ExternalProject_Add(seastar
   #URL https://github.com/vectorizedio/seastar/archive/a99a8eae0757790a3caac151beed137b2e9a4ba4.tar.gz
-  URL https://github.com/scylladb/seastar/archive/seastar-19.06.0.tar.gz
+  URL https://github.com/scylladb/seastar/archive/099517c3144898e9b887990d149fa0b47492aa1f.tar.gz
   #URL_MD5 888abc894e479a7fc40d42650674fe0e
-  URL_MD5 d34672a85d351567c34ca87db2847369
+  URL_MD5 7311e568a7f5517875a25e290dc75077
   INSTALL_DIR    @SMF_DEPS_INSTALL_DIR@
   CMAKE_ARGS
     -DCMAKE_BUILD_TYPE=@CMAKE_BUILD_TYPE@
